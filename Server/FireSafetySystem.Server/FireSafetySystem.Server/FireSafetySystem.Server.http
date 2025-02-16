@@ -1,0 +1,6 @@
+@FireSafetySystem.Server_HostAddress = http://localhost:5029
+
+GET {{FireSafetySystem.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

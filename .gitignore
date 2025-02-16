@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Server/FireSafetySystem.Server/FireSafetySystem.Server/bin/Debug/net8.0
+/Server/FireSafetySystem.Server/.vs
+/Server/FireSafetySystem.Server/FireSafetySystem.Server/obj

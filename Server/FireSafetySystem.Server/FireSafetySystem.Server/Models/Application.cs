@@ -7,7 +7,6 @@
         public string Type { get; set; } // NOC, Inspection, Renewal, Complaint
         public string Status { get; set; } // Pending Review, Approved, Rejected
         public DateTime SubmittedAt { get; set; }
-
         public User User { get; set; }
     }
 

@@ -1,0 +1,28 @@
+.menu-sidebar {
+    background-color: #aca9d3 !important;
+    height: 100vh; /* Make sure the sidebar takes full height */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-sidebar ul[nz-menu] {
+    background-color: #c0bee4 !important;
+    flex-grow: 1; /* Ensure it expands properly */
+    border-right: none;
+  }
+  
+  .menu-sidebar ul[nz-menu] li[nz-menu-item] {
+    background-color: transparent !important;
+    color: #ffffff !important;
+  }
+  
+  .menu-sidebar ul[nz-menu] li[nz-menu-item]:hover,
+  .menu-sidebar ul[nz-menu] li[nz-menu-item].ant-menu-item-selected {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+  }
+  
+  /* Ensures the full height is covered */
+  ::ng-deep nz-sider {
+    background-color: #110d49 !important;
+  }
+  

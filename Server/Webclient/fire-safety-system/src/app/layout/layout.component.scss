@@ -1,0 +1,20 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff !important;
+    padding: 0 16px;
+    height: 64px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header-trigger {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px;
+  }
+  
+  .trigger[nz-icon] {
+    color: #110d49 !important;
+  }
+  

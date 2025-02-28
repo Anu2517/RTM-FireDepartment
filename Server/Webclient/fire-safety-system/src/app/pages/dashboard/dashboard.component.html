@@ -1,1 +1,105 @@
-<p>dashboard works!</p>
+<div class="dashboard-container">
+    <nz-row [nzGutter]="16">
+      
+      <!-- Total Applications -->
+      <nz-col nzSpan="6">
+        <nz-card [nzBordered]="false" class="stat-card total-applications">
+          <div class="card-content">
+            <i nz-icon nzType="file-text" nzTheme="outline" class="card-icon total-icon"></i>
+            <div>
+              <h3>Total Applications</h3>
+              <p class="stat-value">{{ totalApplications }}</p>
+              <p class="stat-subtext">{{ applicationGrowth }} this month</p>
+            </div>
+          </div>
+        </nz-card>
+      </nz-col>
+  
+      <!-- Approved Applications -->
+      <nz-col nzSpan="6">
+        <nz-card [nzBordered]="false" class="stat-card approved-applications">
+          <div class="card-content">
+            <i nz-icon nzType="check-circle" nzTheme="outline" class="card-icon approved-icon"></i>
+            <div>
+              <h3>Approved Applications</h3>
+              <p class="stat-value">{{ approvedApplications }}</p>
+              <p class="stat-subtext">Approved this month</p>
+            </div>
+          </div>
+        </nz-card>
+      </nz-col>
+  
+      <!-- Rejected Applications -->
+      <nz-col nzSpan="6">
+        <nz-card [nzBordered]="false" class="stat-card rejected-applications">
+          <div class="card-content">
+            <i nz-icon nzType="close-circle" nzTheme="outline" class="card-icon rejected-icon"></i>
+            <div>
+              <h3>Rejected Applications</h3>
+              <p class="stat-value">{{ rejectedApplications }}</p>
+              <p class="stat-subtext">Rejected this month</p>
+            </div>
+          </div>
+        </nz-card>
+      </nz-col>
+  
+      <!-- Ongoing Reviews -->
+      <nz-col nzSpan="6">
+        <nz-card [nzBordered]="false" class="stat-card ongoing-reviews">
+          <div class="card-content">
+            <i nz-icon nzType="sync" nzTheme="outline" class="card-icon review-icon"></i>
+            <div>
+              <h3>Ongoing Reviews</h3>
+              <p class="stat-value">{{ ongoingReviews }}</p>
+              <p class="stat-subtext">Under process</p>
+            </div>
+          </div>
+        </nz-card>
+      </nz-col>
+  
+      <!-- Pending Inspections -->
+      <nz-col nzSpan="6">
+        <nz-card [nzBordered]="false" class="stat-card pending-inspections">
+          <div class="card-content">
+            <i nz-icon nzType="search" nzTheme="outline" class="card-icon inspection-icon"></i>
+            <div>
+              <h3>Pending Inspections</h3>
+              <p class="stat-value">{{ pendingInspections }}</p>
+              <p class="stat-subtext">Last updated: {{ lastInspectionUpdate }}</p>
+            </div>
+          </div>
+        </nz-card>
+      </nz-col>
+  
+      <!-- Open Complaints -->
+      <nz-col nzSpan="6">
+        <nz-card [nzBordered]="false" class="stat-card open-complaints">
+          <div class="card-content">
+            <i nz-icon nzType="exclamation-circle" nzTheme="outline" class="card-icon complaint-icon"></i>
+            <div>
+              <h3>Open Complaints</h3>
+              <p class="stat-value">{{ openComplaints }}</p>
+              <p class="stat-subtext">{{ resolvedComplaints }} resolved today</p>
+            </div>
+          </div>
+        </nz-card>
+      </nz-col>
+  
+      <!-- Recent Updates -->
+      <nz-col nzSpan="6">
+        <nz-card [nzBordered]="false" class="stat-card recent-updates">
+          <div class="card-content">
+            <i nz-icon nzType="bell" nzTheme="outline" class="card-icon update-icon"></i>
+            <div>
+              <h3>Recent Updates</h3>
+              <ul class="recent-updates-list">
+                <li *ngFor="let update of recentUpdates">{{ update }}</li>
+              </ul>
+            </div>
+          </div>
+        </nz-card>
+      </nz-col>
+  
+    </nz-row>
+  </div>
+  

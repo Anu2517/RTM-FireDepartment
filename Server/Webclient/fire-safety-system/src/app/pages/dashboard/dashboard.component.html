@@ -1,6 +1,5 @@
 <div class="dashboard-container">
     <nz-row [nzGutter]="16">
-      
       <!-- Total Applications -->
       <nz-col nzSpan="6">
         <nz-card [nzBordered]="false" class="stat-card total-applications">
@@ -99,7 +98,18 @@
           </div>
         </nz-card>
       </nz-col>
+    </nz-row>
   
+    <!-- Pie Chart Section -->
+    <nz-row [nzGutter]="16">
+      <nz-col nzSpan="12">
+        <nz-card [nzBordered]="false" class="stat-card pie-chart-card">
+          <div class="card-content">
+            <h3>Application Status Distribution</h3>
+            <div echarts [options]="pieChartOptions" class="chart-container"></div>
+          </div>
+        </nz-card>
+      </nz-col>
     </nz-row>
   </div>
   
